@@ -5,6 +5,9 @@ RUN apt-get update && \
           zip \
           unzip
 
+# Speciallly formatted hybrid mbr to make raspi 3's happy
+COPY hybrid-mbr.img /root/hybrid-mbr.img
+
 COPY guestfish_commands/bootpart-commands.txt /root/bootpart-commands.txt
 COPY guestfish_commands/ignition-commands.txt /root/ignition-commands.txt
 

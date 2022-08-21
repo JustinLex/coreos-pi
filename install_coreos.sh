@@ -8,7 +8,7 @@ xz -dkc /root/src/"$compressed_diskimage_name" > /root/src/coreos.img
 echo CoreOS image extracted successfully.
 
 # Install hybrid MBR table for compatibility with Raspberry Pi 3
-dd if=/root/src/hybrid-mbr.img of=/root/src/coreos.img bs=512 count=1 conv=notrunc
+dd if=/root/hybrid-mbr.img of=/root/src/coreos.img bs=512 count=1 conv=notrunc
 
 # Download Raspberry Pi 3 UEFI bootloader and unzip
 echo Downloading UEFI bootloader
