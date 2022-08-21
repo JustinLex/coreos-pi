@@ -2,3 +2,4 @@
 *.img
 *.raw
 *.xz
+!hybrid-mbr.img
