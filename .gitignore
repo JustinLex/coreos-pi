@@ -1,0 +1,4 @@
+# CoreOS images
+*.img
+*.raw
+*.xz
